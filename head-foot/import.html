@@ -1,10 +1,5 @@
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script> 
-$(function(){
-  $("#header").load("https://tumblenet.tk/head-foot/header.html"); 
-  $("#tumble-footer").load("https://tumblenet.tk/head-foot/footer.html"); 
-});
-</script>
+
  <!-- Material Design Lite -->
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
@@ -17,4 +12,8 @@ $(function(){
 $(function() {
   $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
 });
-    </script>
+$(function(){
+  $("#header").load("https://tumblenet.tk/head-foot/header.html"); 
+  $("#tumble-footer").load("https://tumblenet.tk/head-foot/footer.html"); 
+});
+</script>
