@@ -36,9 +36,15 @@
     <script src="http://www.tumblenet.tk/min/plugin-min.js"></script>
     <script src="http://www.tumblenet.tk/min/custom-min.js"></script>
 <script>
-    $(function(){
-  $('nav a[href=window.location.href]').parent().addClass('active');
+    $(function(){      
+        $("nav a").each(function(){
+               if ($(this).attr("href") == window.location.pathname){
+                       $(this).parent().addClass('active');
+               }
+       });
     });
+    
+    
 </script>
 </body>
 </html>
