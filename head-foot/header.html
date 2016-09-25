@@ -24,3 +24,7 @@
  <!--  Scripts-->
     <script src="http://www.tumblenet.tk/min/plugin-min.js"></script>
     <script src="http://www.tumblenet.tk/min/custom-min.js"></script>
+<script>
+    $(function() {
+  $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').parent().addClass('active');
+    });</script>
