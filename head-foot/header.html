@@ -38,10 +38,11 @@
 <script>
     $(function(){      
         $("nav a").each(function(){
-               if ($(this).attr("href") == window.location.href + "/"){
+               if ($(this).attr("href") + "/" == window.location.href){
                        $(this).parent().addClass('active');
                }
        });
+        alert(window.location.href);
     });
     
     
