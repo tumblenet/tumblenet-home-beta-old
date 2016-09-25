@@ -12,7 +12,9 @@
     <script>
 $(function(){
   $("#tumble-header").load("http://beta.tumblenet.tk/head-foot/header.html"); 
-  $("#tumble-footer").load("http://beta.tumblenet.tk/head-foot/footer.html"); 
-  $("#tumble-scripts").load("http://beta.tumblenet.tk/head-foot/scripts.html"); 
+  $("#tumble-footer").load("http://beta.tumblenet.tk/head-foot/footer.html");
 });
+$(function() {
+  $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').parent().addClass('active');
+    });
 </script>
