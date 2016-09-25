@@ -26,3 +26,8 @@
  <!--  Scripts-->
     <script src="http://www.tumblenet.tk/min/plugin-min.js"></script>
     <script src="http://www.tumblenet.tk/min/custom-min.js"></script>
+<script>
+    $(function(){
+  $('nav > ul > li > a[href*='" + location.pathname + "']').parent().addClass('active');
+    });
+</script>
