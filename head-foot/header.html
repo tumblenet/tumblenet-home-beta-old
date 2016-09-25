@@ -37,7 +37,7 @@
     <script src="http://www.tumblenet.tk/min/custom-min.js"></script>
 <script>
     $(function(){
-  $('nav a[href*='" + location.pathname + "']').parent().addClass('active');
+  $('nav a[href=window.location.href]').parent().addClass('active');
     });
 </script>
 </body>
